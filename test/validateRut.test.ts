@@ -30,9 +30,8 @@ describe('validateRut', () => {
   });
 
   it('Tipo de dato no valido', () => {
-    expect(function () {
-      validateRut({'19':0});
-    }).toThrow(new Error("El tipo de dato es incorrecto"));
+    expect(function() {
+      validateRut({ '19': 0 });
+    }).toThrow(new Error('El tipo de dato es incorrecto'));
   });
-
 });
